@@ -28,7 +28,6 @@ defmodule TipApps.MixProject do
       {:distillery, "~> 2.0"},
       {:pigeon, "~> 1.3"}, {:kadabra, "~> 0.4.3"},
       {:gcm, "~> 1.5"},
-      {:gen_smtp, "~> 0.14.0"},
       {:benchee, "~> 1.0"},
       {:gen_smtp, "~> 1.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
