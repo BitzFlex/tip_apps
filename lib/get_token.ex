@@ -8,12 +8,12 @@ defmodule GetToken do
     end
 
     def get(str,head,tail,acc) do
-        with [_, text] <- String.split(str,head, parts: 2), 
+        with [_, text] <- String.split(str,head, parts: 2),
              [token, remain] <- String.split(text, tail, parts: 2)
         do
             get(remain, head, tail, [token | acc])
         else
-            _ -> Enum.reverse acc           
+            _ -> Enum.reverse acc
         end
     end
 
@@ -40,15 +40,10 @@ defmodule GetToken do
           <th>상담일시</th>
         </tr>
         """
-    
+
         # get("<tr> abc </tr>  <tr> 123 </tr>\n\n<tr>가나다 </tr>","<tr>","</tr>",[])
         get(data,"<tr>","</tr>",[]) |> Enum.at(0) |> get("<th","</th>",[])
         # get("",",", "]", [])
     end
-
-
-
-
-
 
 end
