@@ -35,3 +35,12 @@ config :pigeon, :fcm,
     key: "AAAAey1bWuo:APA91bHvL5b4igzNxLi_9Y9o_DlVMEu_mqTJYbAONFShshWYttSZ1X-odH11VY9L-U5fdMNqBYvu0OJnalx1dJQ7uq7i8tIIjouYeAfPZxDg-0Eh5zz9_KRabNwTCHdKki8HUhcFt8Km"
   }
 
+
+config :tip_apps, MongoConfig,
+	hostname: "jdi.bitzflex.com",
+	port: 27027,
+	database: "bhseong",
+	username: "bhseong",
+	password: "100hoon",
+	auth_source: "bhseong",
+  pool_size: 3

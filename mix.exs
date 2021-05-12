@@ -29,7 +29,8 @@ defmodule TipApps.MixProject do
       {:pigeon, "~> 1.3"}, {:kadabra, "~> 0.4.3"},
       {:gcm, "~> 1.5"},
       {:benchee, "~> 1.0"},
-      {:gen_smtp, "~> 1.1"}
+      {:gen_smtp, "~> 1.1"},
+      {:mongodb_driver, "~> 0.7.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
