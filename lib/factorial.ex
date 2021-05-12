@@ -32,7 +32,7 @@ defmodule Factorial do
   # Node.connect(node)
   # :net_kernel.monitor_nodes(true)
 
-  # Node.connect(:ntels@rose)
+  # Node.connect(:ntels@lilac)
 
   # Node.self
   # Node.list
