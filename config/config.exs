@@ -36,11 +36,4 @@ config :pigeon, :fcm,
   }
 
 
-config :tip_apps, MongoConfig,
-	hostname: "jdi.bitzflex.com",
-	port: 27027,
-	database: "bhseong",
-	username: "bhseong",
-	password: "100hoon",
-	auth_source: "bhseong",
-  pool_size: 3
+  import_config "m.exs"
