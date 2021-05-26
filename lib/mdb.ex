@@ -15,7 +15,7 @@ defmodule MDB do
     1..1_000
       |> Enum.each(fn i ->
                       name = "hippo#{rem(i,10)}"
-                      doc_map = %{"name" => name, "no" => i}
+                      doc_map = %{"name" => name, "no" => i , "ts" =>  System.os_time(:second), "no2" => i * 10 }
                       Mongo.insert_one(:mongo,"sample",doc_map)
                    end)
   end
