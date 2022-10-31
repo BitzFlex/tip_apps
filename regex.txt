@@ -1,0 +1,6 @@
+rx = ~r"<a href=\"\./view\.php\?No=\d+\">(?<name>.+)</a>"i
+Regex.named_captures(rx,"<a href=\"./view.php?No=2365\">박종화</a>"  )
+
+
+rx = ~r"<a href=\"\./view\.php\?No=(?<item_no>\d+)\">(?<name>.+)</a>"i
+Regex.named_captures(rx,"<a href=\"./view.php?No=2365\">박종화</a>")

@@ -1,0 +1,7 @@
+
+MIX_ENV=dev mix release
+
+_build/dev/rel/tip_apps/bin/tip_apps start
+
+_build/dev/rel/tip_apps/bin/tip_apps attach
+

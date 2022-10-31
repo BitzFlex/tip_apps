@@ -1,0 +1,2 @@
+1..10_000 |> Enum.reduce(1,fn i,acc -> i * acc end)
+
